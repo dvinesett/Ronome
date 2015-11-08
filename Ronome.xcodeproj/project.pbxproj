@@ -1,0 +1,506 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		FAD719DF1BEFDAB700243A05 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = FAD719DE1BEFDAB700243A05 /* AppDelegate.swift */; };
+		FAD719E11BEFDAB700243A05 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FAD719E01BEFDAB700243A05 /* ViewController.swift */; };
+		FAD719E41BEFDAB800243A05 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = FAD719E21BEFDAB800243A05 /* Main.storyboard */; };
+		FAD719E61BEFDAB800243A05 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = FAD719E51BEFDAB800243A05 /* Assets.xcassets */; };
+		FAD719E91BEFDAB800243A05 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = FAD719E71BEFDAB800243A05 /* LaunchScreen.storyboard */; };
+		FAD719F41BEFDAB800243A05 /* RonomeTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = FAD719F31BEFDAB800243A05 /* RonomeTests.swift */; };
+		FAD719FF1BEFDAB800243A05 /* RonomeUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = FAD719FE1BEFDAB800243A05 /* RonomeUITests.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		FAD719F01BEFDAB800243A05 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = FAD719D31BEFDAB700243A05 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = FAD719DA1BEFDAB700243A05;
+			remoteInfo = Ronome;
+		};
+		FAD719FB1BEFDAB800243A05 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = FAD719D31BEFDAB700243A05 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = FAD719DA1BEFDAB700243A05;
+			remoteInfo = Ronome;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		FAD719DB1BEFDAB700243A05 /* Ronome.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Ronome.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		FAD719DE1BEFDAB700243A05 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		FAD719E01BEFDAB700243A05 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		FAD719E31BEFDAB800243A05 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		FAD719E51BEFDAB800243A05 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		FAD719E81BEFDAB800243A05 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		FAD719EA1BEFDAB800243A05 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		FAD719EF1BEFDAB800243A05 /* RonomeTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = RonomeTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		FAD719F31BEFDAB800243A05 /* RonomeTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RonomeTests.swift; sourceTree = "<group>"; };
+		FAD719F51BEFDAB800243A05 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		FAD719FA1BEFDAB800243A05 /* RonomeUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = RonomeUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		FAD719FE1BEFDAB800243A05 /* RonomeUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RonomeUITests.swift; sourceTree = "<group>"; };
+		FAD71A001BEFDAB800243A05 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		FAD719D81BEFDAB700243A05 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		FAD719EC1BEFDAB800243A05 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		FAD719F71BEFDAB800243A05 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		FAD719D21BEFDAB700243A05 = {
+			isa = PBXGroup;
+			children = (
+				FAD719DD1BEFDAB700243A05 /* Ronome */,
+				FAD719F21BEFDAB800243A05 /* RonomeTests */,
+				FAD719FD1BEFDAB800243A05 /* RonomeUITests */,
+				FAD719DC1BEFDAB700243A05 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		FAD719DC1BEFDAB700243A05 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				FAD719DB1BEFDAB700243A05 /* Ronome.app */,
+				FAD719EF1BEFDAB800243A05 /* RonomeTests.xctest */,
+				FAD719FA1BEFDAB800243A05 /* RonomeUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		FAD719DD1BEFDAB700243A05 /* Ronome */ = {
+			isa = PBXGroup;
+			children = (
+				FAD719DE1BEFDAB700243A05 /* AppDelegate.swift */,
+				FAD719E01BEFDAB700243A05 /* ViewController.swift */,
+				FAD719E21BEFDAB800243A05 /* Main.storyboard */,
+				FAD719E51BEFDAB800243A05 /* Assets.xcassets */,
+				FAD719E71BEFDAB800243A05 /* LaunchScreen.storyboard */,
+				FAD719EA1BEFDAB800243A05 /* Info.plist */,
+			);
+			path = Ronome;
+			sourceTree = "<group>";
+		};
+		FAD719F21BEFDAB800243A05 /* RonomeTests */ = {
+			isa = PBXGroup;
+			children = (
+				FAD719F31BEFDAB800243A05 /* RonomeTests.swift */,
+				FAD719F51BEFDAB800243A05 /* Info.plist */,
+			);
+			path = RonomeTests;
+			sourceTree = "<group>";
+		};
+		FAD719FD1BEFDAB800243A05 /* RonomeUITests */ = {
+			isa = PBXGroup;
+			children = (
+				FAD719FE1BEFDAB800243A05 /* RonomeUITests.swift */,
+				FAD71A001BEFDAB800243A05 /* Info.plist */,
+			);
+			path = RonomeUITests;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		FAD719DA1BEFDAB700243A05 /* Ronome */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = FAD71A031BEFDAB800243A05 /* Build configuration list for PBXNativeTarget "Ronome" */;
+			buildPhases = (
+				FAD719D71BEFDAB700243A05 /* Sources */,
+				FAD719D81BEFDAB700243A05 /* Frameworks */,
+				FAD719D91BEFDAB700243A05 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = Ronome;
+			productName = Ronome;
+			productReference = FAD719DB1BEFDAB700243A05 /* Ronome.app */;
+			productType = "com.apple.product-type.application";
+		};
+		FAD719EE1BEFDAB800243A05 /* RonomeTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = FAD71A061BEFDAB800243A05 /* Build configuration list for PBXNativeTarget "RonomeTests" */;
+			buildPhases = (
+				FAD719EB1BEFDAB800243A05 /* Sources */,
+				FAD719EC1BEFDAB800243A05 /* Frameworks */,
+				FAD719ED1BEFDAB800243A05 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				FAD719F11BEFDAB800243A05 /* PBXTargetDependency */,
+			);
+			name = RonomeTests;
+			productName = RonomeTests;
+			productReference = FAD719EF1BEFDAB800243A05 /* RonomeTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		FAD719F91BEFDAB800243A05 /* RonomeUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = FAD71A091BEFDAB800243A05 /* Build configuration list for PBXNativeTarget "RonomeUITests" */;
+			buildPhases = (
+				FAD719F61BEFDAB800243A05 /* Sources */,
+				FAD719F71BEFDAB800243A05 /* Frameworks */,
+				FAD719F81BEFDAB800243A05 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				FAD719FC1BEFDAB800243A05 /* PBXTargetDependency */,
+			);
+			name = RonomeUITests;
+			productName = RonomeUITests;
+			productReference = FAD719FA1BEFDAB800243A05 /* RonomeUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		FAD719D31BEFDAB700243A05 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0700;
+				ORGANIZATIONNAME = "Vinesett, Dylan";
+				TargetAttributes = {
+					FAD719DA1BEFDAB700243A05 = {
+						CreatedOnToolsVersion = 7.0.1;
+					};
+					FAD719EE1BEFDAB800243A05 = {
+						CreatedOnToolsVersion = 7.0.1;
+						TestTargetID = FAD719DA1BEFDAB700243A05;
+					};
+					FAD719F91BEFDAB800243A05 = {
+						CreatedOnToolsVersion = 7.0.1;
+						TestTargetID = FAD719DA1BEFDAB700243A05;
+					};
+				};
+			};
+			buildConfigurationList = FAD719D61BEFDAB700243A05 /* Build configuration list for PBXProject "Ronome" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = FAD719D21BEFDAB700243A05;
+			productRefGroup = FAD719DC1BEFDAB700243A05 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				FAD719DA1BEFDAB700243A05 /* Ronome */,
+				FAD719EE1BEFDAB800243A05 /* RonomeTests */,
+				FAD719F91BEFDAB800243A05 /* RonomeUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		FAD719D91BEFDAB700243A05 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				FAD719E91BEFDAB800243A05 /* LaunchScreen.storyboard in Resources */,
+				FAD719E61BEFDAB800243A05 /* Assets.xcassets in Resources */,
+				FAD719E41BEFDAB800243A05 /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		FAD719ED1BEFDAB800243A05 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		FAD719F81BEFDAB800243A05 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		FAD719D71BEFDAB700243A05 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				FAD719E11BEFDAB700243A05 /* ViewController.swift in Sources */,
+				FAD719DF1BEFDAB700243A05 /* AppDelegate.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		FAD719EB1BEFDAB800243A05 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				FAD719F41BEFDAB800243A05 /* RonomeTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		FAD719F61BEFDAB800243A05 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				FAD719FF1BEFDAB800243A05 /* RonomeUITests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		FAD719F11BEFDAB800243A05 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = FAD719DA1BEFDAB700243A05 /* Ronome */;
+			targetProxy = FAD719F01BEFDAB800243A05 /* PBXContainerItemProxy */;
+		};
+		FAD719FC1BEFDAB800243A05 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = FAD719DA1BEFDAB700243A05 /* Ronome */;
+			targetProxy = FAD719FB1BEFDAB800243A05 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		FAD719E21BEFDAB800243A05 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				FAD719E31BEFDAB800243A05 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		FAD719E71BEFDAB800243A05 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				FAD719E81BEFDAB800243A05 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		FAD71A011BEFDAB800243A05 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		FAD71A021BEFDAB800243A05 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		FAD71A041BEFDAB800243A05 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				INFOPLIST_FILE = Ronome/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.uncc.dope.Ronome;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		FAD71A051BEFDAB800243A05 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				INFOPLIST_FILE = Ronome/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.uncc.dope.Ronome;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
+		FAD71A071BEFDAB800243A05 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				INFOPLIST_FILE = RonomeTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.uncc.dope.RonomeTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Ronome.app/Ronome";
+			};
+			name = Debug;
+		};
+		FAD71A081BEFDAB800243A05 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				INFOPLIST_FILE = RonomeTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.uncc.dope.RonomeTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Ronome.app/Ronome";
+			};
+			name = Release;
+		};
+		FAD71A0A1BEFDAB800243A05 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				INFOPLIST_FILE = RonomeUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.uncc.dope.RonomeUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_TARGET_NAME = Ronome;
+				USES_XCTRUNNER = YES;
+			};
+			name = Debug;
+		};
+		FAD71A0B1BEFDAB800243A05 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				INFOPLIST_FILE = RonomeUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.uncc.dope.RonomeUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_TARGET_NAME = Ronome;
+				USES_XCTRUNNER = YES;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		FAD719D61BEFDAB700243A05 /* Build configuration list for PBXProject "Ronome" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				FAD71A011BEFDAB800243A05 /* Debug */,
+				FAD71A021BEFDAB800243A05 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		FAD71A031BEFDAB800243A05 /* Build configuration list for PBXNativeTarget "Ronome" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				FAD71A041BEFDAB800243A05 /* Debug */,
+				FAD71A051BEFDAB800243A05 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+		FAD71A061BEFDAB800243A05 /* Build configuration list for PBXNativeTarget "RonomeTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				FAD71A071BEFDAB800243A05 /* Debug */,
+				FAD71A081BEFDAB800243A05 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+		FAD71A091BEFDAB800243A05 /* Build configuration list for PBXNativeTarget "RonomeUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				FAD71A0A1BEFDAB800243A05 /* Debug */,
+				FAD71A0B1BEFDAB800243A05 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = FAD719D31BEFDAB700243A05 /* Project object */;
+}
