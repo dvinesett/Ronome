@@ -9,7 +9,18 @@
 import UIKit
 
 class ViewController: UIViewController {
+    
+    
+    @IBOutlet weak var stepperTempo: UIStepper!
+    @IBOutlet weak var labelTempo: UILabel!
+    
+    var tempo: Int
+    
 
+    @IBAction func changeTempo(stepperTempo: UIStepper) {
+        tempo = stepperTempo.value
+    }
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view, typically from a nib.
@@ -21,5 +32,9 @@ class ViewController: UIViewController {
     }
 
 
+    override func viewDidLoad() {
+        super.didViewLoad()
+        
+    }
 }
 
