@@ -16,19 +16,12 @@
                         <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="uB1-rg-PWp">
-                                <rect key="frame" x="198" y="55" width="30" height="30"/>
-                                <state key="normal" title="-"/>
-                                <connections>
-                                    <action selector="decrementTempo:" destination="BYZ-38-t0r" eventType="touchUpInside" id="XkL-WJ-T0S"/>
-                                </connections>
-                            </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="si8-WC-5j5">
                                 <rect key="frame" x="300" y="55" width="30" height="30"/>
                                 <state key="normal" title="tap"/>
                             </button>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="0" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="pLl-O5-jqX">
-                                <rect key="frame" x="185" y="59" width="11" height="21"/>
+                                <rect key="frame" x="185" y="59" width="77" height="21"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                 <nil key="highlightedColor"/>
@@ -36,16 +29,31 @@
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="o2D-Wn-YB3">
                                 <rect key="frame" x="356" y="243" width="46" height="30"/>
                                 <state key="normal" title="Button"/>
+                                <connections>
+                                    <action selector="toggleClick:" destination="BYZ-38-t0r" eventType="touchUpInside" id="fub-T4-4jD"/>
+                                </connections>
                             </button>
-                            <stepper opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" maximumValue="100" translatesAutoresizingMaskIntoConstraints="NO" id="9yU-dj-cSi">
+                            <stepper opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" maximumValue="500" translatesAutoresizingMaskIntoConstraints="NO" id="9yU-dj-cSi">
                                 <rect key="frame" x="253" y="131" width="94" height="29"/>
+                                <connections>
+                                    <action selector="changeTempo:" destination="BYZ-38-t0r" eventType="valueChanged" id="xQs-8y-OdF"/>
+                                </connections>
                             </stepper>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="uB1-rg-PWp">
+                                <rect key="frame" x="246" y="371" width="30" height="30"/>
+                                <state key="normal" title="-"/>
+                            </button>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                        <variation key="default">
+                            <mask key="subviews">
+                                <exclude reference="uB1-rg-PWp"/>
+                            </mask>
+                        </variation>
                     </view>
                     <connections>
-                        <outlet property="stepperTempo" destination="9yU-dj-cSi" id="KPS-pM-Uth"/>
-                        <outlet property="tempo" destination="pLl-O5-jqX" id="9ay-nM-iam"/>
+                        <outlet property="tempoLabel" destination="pLl-O5-jqX" id="Wxh-wY-IFN"/>
+                        <outlet property="tempoStepper" destination="9yU-dj-cSi" id="XnQ-C9-Ov7"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>

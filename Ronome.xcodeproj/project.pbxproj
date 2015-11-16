@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		FA24FB771BF9514D00092E31 /* snizzap.wav in Resources */ = {isa = PBXBuildFile; fileRef = FA24FB761BF9514D00092E31 /* snizzap.wav */; settings = {ASSET_TAGS = (); }; };
 		FAD719DF1BEFDAB700243A05 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = FAD719DE1BEFDAB700243A05 /* AppDelegate.swift */; };
 		FAD719E11BEFDAB700243A05 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FAD719E01BEFDAB700243A05 /* ViewController.swift */; };
 		FAD719E41BEFDAB800243A05 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = FAD719E21BEFDAB800243A05 /* Main.storyboard */; };
@@ -34,6 +35,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		FA24FB761BF9514D00092E31 /* snizzap.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = snizzap.wav; sourceTree = "<group>"; };
 		FAD719DB1BEFDAB700243A05 /* Ronome.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Ronome.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		FAD719DE1BEFDAB700243A05 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		FAD719E01BEFDAB700243A05 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -101,6 +103,7 @@
 				FAD719E01BEFDAB700243A05 /* ViewController.swift */,
 				FAD719E21BEFDAB800243A05 /* Main.storyboard */,
 				FAD719E51BEFDAB800243A05 /* Assets.xcassets */,
+				FA24FB761BF9514D00092E31 /* snizzap.wav */,
 				FAD719E71BEFDAB800243A05 /* LaunchScreen.storyboard */,
 				FAD719EA1BEFDAB800243A05 /* Info.plist */,
 			);
@@ -231,6 +234,7 @@
 			files = (
 				FAD719E91BEFDAB800243A05 /* LaunchScreen.storyboard in Resources */,
 				FAD719E61BEFDAB800243A05 /* Assets.xcassets in Resources */,
+				FA24FB771BF9514D00092E31 /* snizzap.wav in Resources */,
 				FAD719E41BEFDAB800243A05 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -490,6 +494,7 @@
 				FAD71A051BEFDAB800243A05 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		FAD71A061BEFDAB800243A05 /* Build configuration list for PBXNativeTarget "RonomeTests" */ = {
 			isa = XCConfigurationList;
@@ -498,6 +503,7 @@
 				FAD71A081BEFDAB800243A05 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		FAD71A091BEFDAB800243A05 /* Build configuration list for PBXNativeTarget "RonomeUITests" */ = {
 			isa = XCConfigurationList;
@@ -506,6 +512,7 @@
 				FAD71A0B1BEFDAB800243A05 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
