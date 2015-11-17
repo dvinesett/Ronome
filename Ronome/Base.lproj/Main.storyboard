@@ -20,7 +20,7 @@
                                 <rect key="frame" x="300" y="55" width="30" height="30"/>
                                 <state key="normal" title="tap"/>
                             </button>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="0" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="pLl-O5-jqX">
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="60" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="pLl-O5-jqX">
                                 <rect key="frame" x="185" y="59" width="77" height="21"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
@@ -33,12 +33,18 @@
                                     <action selector="toggleClick:" destination="BYZ-38-t0r" eventType="touchUpInside" id="fub-T4-4jD"/>
                                 </connections>
                             </button>
-                            <stepper opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" maximumValue="500" translatesAutoresizingMaskIntoConstraints="NO" id="9yU-dj-cSi">
+                            <stepper opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" maximumValue="240" translatesAutoresizingMaskIntoConstraints="NO" id="9yU-dj-cSi">
                                 <rect key="frame" x="253" y="131" width="94" height="29"/>
                                 <connections>
-                                    <action selector="changeTempo:" destination="BYZ-38-t0r" eventType="valueChanged" id="xQs-8y-OdF"/>
+                                    <action selector="stepTempo:" destination="BYZ-38-t0r" eventType="valueChanged" id="daB-t2-YI8"/>
                                 </connections>
                             </stepper>
+                            <slider opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" value="60" minValue="0.0" maxValue="240" translatesAutoresizingMaskIntoConstraints="NO" id="VXo-y2-O5D">
+                                <rect key="frame" x="174" y="196" width="279" height="31"/>
+                                <connections>
+                                    <action selector="slideTempo:" destination="BYZ-38-t0r" eventType="valueChanged" id="Rvj-Ck-q9n"/>
+                                </connections>
+                            </slider>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="uB1-rg-PWp">
                                 <rect key="frame" x="246" y="371" width="30" height="30"/>
                                 <state key="normal" title="-"/>
@@ -53,6 +59,7 @@
                     </view>
                     <connections>
                         <outlet property="tempoLabel" destination="pLl-O5-jqX" id="Wxh-wY-IFN"/>
+                        <outlet property="tempoSlider" destination="VXo-y2-O5D" id="UAR-R2-Gdv"/>
                         <outlet property="tempoStepper" destination="9yU-dj-cSi" id="XnQ-C9-Ov7"/>
                     </connections>
                 </viewController>

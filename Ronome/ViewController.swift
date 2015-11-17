@@ -14,6 +14,7 @@ class ViewController: UIViewController {
     
     @IBOutlet weak var tempoLabel: UILabel!
     @IBOutlet weak var tempoStepper: UIStepper!
+    @IBOutlet weak var tempoSlider: UISlider!
     
     
     var metronomeTimer: NSTimer!
@@ -22,15 +23,20 @@ class ViewController: UIViewController {
     
     var metronomeSoundPlayer: AVAudioPlayer!
     
-    var tempo: NSTimeInterval = 20 {
+    var tempo: NSTimeInterval = 60 {
         didSet {
             tempoLabel.text = String(format: "%.0f", tempo)
             tempoStepper.value = Double(tempo)
         }
     }
     
-    @IBAction func changeTempo(tempoStepper: UIStepper) {
-        tempo = tempoStepper.value
+    @IBAction func stepTempo(sender: UIStepper) {
+        tempo = sender.value
+        updateSlider()
+    }
+    
+    @IBAction func slideTempo(sender: UISlider) {
+        tempo = Double(sender.value)
     }
     
     @IBAction func toggleClick(sender: UIButton) {
@@ -71,12 +77,15 @@ class ViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         
-        tempo = 240
+        tempo = 60
         
         let metronomeSoundURL = NSURL(fileURLWithPath: NSBundle.mainBundle().pathForResource("snizzap", ofType: "wav")!)
         metronomeSoundPlayer = try? AVAudioPlayer(contentsOfURL: metronomeSoundURL)
         metronomeSoundPlayer.prepareToPlay()
-        
+    }
+    
+    func updateSlider() {
+        tempoSlider.value = Float(tempo)
     }
 }
 
