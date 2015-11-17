@@ -16,23 +16,19 @@ class ViewController: UIViewController {
     @IBOutlet weak var tempoStepper: UIStepper!
     @IBOutlet weak var tempoSlider: UISlider!
     
-    
     var metronomeTimer: NSTimer!
-    
     var metronomeIsOn = false
-    
     var metronomeSoundPlayer: AVAudioPlayer!
-    
     var tempo: NSTimeInterval = 60 {
         didSet {
             tempoLabel.text = String(format: "%.0f", tempo)
             tempoStepper.value = Double(tempo)
+            tempoSlider.value = Float(tempo)
         }
     }
     
     @IBAction func stepTempo(sender: UIStepper) {
         tempo = sender.value
-        updateSlider()
     }
     
     @IBAction func slideTempo(sender: UISlider) {
@@ -41,30 +37,20 @@ class ViewController: UIViewController {
     
     @IBAction func toggleClick(sender: UIButton) {
         if metronomeIsOn {
+            // stop
             metronomeIsOn = false
-            
             metronomeTimer?.invalidate()
-            tempoStepper.enabled = true
-            
-            tempoLabel.enabled = true
         } else {
+            // start
             metronomeIsOn = true
-            
             let metronomeTimeInterval:NSTimeInterval = 60.0 / tempo
             metronomeTimer = NSTimer.scheduledTimerWithTimeInterval(metronomeTimeInterval, target: self, selector: Selector("playMetronomeSound"), userInfo: nil, repeats: true)
             metronomeTimer?.fire()
-            
-            tempoStepper.enabled = false
-            
-            tempoLabel.resignFirstResponder()
-            
-            tempoLabel.enabled = false
         }
     }
     
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
-        // Dispose of any resources that can be recreated.
     }
 
     func playMetronomeSound() {
@@ -82,10 +68,6 @@ class ViewController: UIViewController {
         let metronomeSoundURL = NSURL(fileURLWithPath: NSBundle.mainBundle().pathForResource("snizzap", ofType: "wav")!)
         metronomeSoundPlayer = try? AVAudioPlayer(contentsOfURL: metronomeSoundURL)
         metronomeSoundPlayer.prepareToPlay()
-    }
-    
-    func updateSlider() {
-        tempoSlider.value = Float(tempo)
     }
 }
 
