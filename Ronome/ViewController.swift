@@ -40,12 +40,14 @@ class ViewController: UIViewController {
             // stop
             metronomeIsOn = false
             metronomeTimer?.invalidate()
+            sender.setTitle("Start", forState: UIControlState.Normal)
         } else {
             // start
             metronomeIsOn = true
             let metronomeTimeInterval:NSTimeInterval = 60.0 / tempo
             metronomeTimer = NSTimer.scheduledTimerWithTimeInterval(metronomeTimeInterval, target: self, selector: Selector("playMetronomeSound"), userInfo: nil, repeats: true)
             metronomeTimer?.fire()
+            sender.setTitle("Stop", forState: UIControlState.Normal)
         }
     }
     
@@ -59,7 +61,7 @@ class ViewController: UIViewController {
         
         metronomeSoundPlayer.play()
     }
-
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         
