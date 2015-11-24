@@ -17,7 +17,7 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="si8-WC-5j5">
-                                <rect key="frame" x="79" y="327" width="30" height="30"/>
+                                <rect key="frame" x="209" y="370" width="30" height="30"/>
                                 <state key="normal" title="tap"/>
                             </button>
                             <stepper opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" maximumValue="240" translatesAutoresizingMaskIntoConstraints="NO" id="9yU-dj-cSi">
@@ -27,7 +27,7 @@
                                 </connections>
                             </stepper>
                             <slider opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" value="60" minValue="0.0" maxValue="240" translatesAutoresizingMaskIntoConstraints="NO" id="VXo-y2-O5D">
-                                <rect key="frame" x="18" y="207" width="279" height="31"/>
+                                <rect key="frame" x="18" y="198" width="279" height="31"/>
                                 <connections>
                                     <action selector="slideTempo:" destination="BYZ-38-t0r" eventType="valueChanged" id="Rvj-Ck-q9n"/>
                                 </connections>
@@ -45,7 +45,7 @@
                                 <nil key="highlightedColor"/>
                             </label>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="o2D-Wn-YB3">
-                                <rect key="frame" x="234" y="282" width="46" height="30"/>
+                                <rect key="frame" x="201" y="282" width="94" height="66"/>
                                 <color key="backgroundColor" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
                                 <color key="tintColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 <state key="normal" title="Start"/>
@@ -53,13 +53,60 @@
                                     <action selector="toggleClick:" destination="BYZ-38-t0r" eventType="touchUpInside" id="fub-T4-4jD"/>
                                 </connections>
                             </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="4" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="MMa-9K-tRr">
+                                <rect key="frame" x="20" y="282" width="29" height="29"/>
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="24"/>
+                                <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="4" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="W9i-pE-069">
+                                <rect key="frame" x="54" y="319" width="29" height="29"/>
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="24"/>
+                                <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Time Signature:" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="NTH-Yz-3pT">
+                                <rect key="frame" x="20" y="245" width="183" height="29"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="24"/>
+                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="/" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="LoA-sX-ziT">
+                                <rect key="frame" x="41" y="297" width="29" height="29"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="36"/>
+                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <stepper opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" maximumValue="240" translatesAutoresizingMaskIntoConstraints="NO" id="ivd-lF-Ys7">
+                                <rect key="frame" x="85" y="282" width="94" height="29"/>
+                                <connections>
+                                    <action selector="stepTsUpper:" destination="BYZ-38-t0r" eventType="valueChanged" id="M94-wp-Mn7"/>
+                                </connections>
+                            </stepper>
+                            <stepper opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" maximumValue="240" translatesAutoresizingMaskIntoConstraints="NO" id="puG-yx-aLn">
+                                <rect key="frame" x="85" y="319" width="94" height="29"/>
+                                <connections>
+                                    <action selector="stepTsLower:" destination="BYZ-38-t0r" eventType="valueChanged" id="8mL-pj-jKS"/>
+                                </connections>
+                            </stepper>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="1" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="8nG-8X-jje">
+                                <rect key="frame" x="201" y="245" width="70" height="29"/>
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="24"/>
+                                <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
                     </view>
                     <connections>
+                        <outlet property="countLabel" destination="8nG-8X-jje" id="aIM-X6-pMP"/>
                         <outlet property="tempoLabel" destination="pLl-O5-jqX" id="Wxh-wY-IFN"/>
                         <outlet property="tempoSlider" destination="VXo-y2-O5D" id="UAR-R2-Gdv"/>
                         <outlet property="tempoStepper" destination="9yU-dj-cSi" id="XnQ-C9-Ov7"/>
+                        <outlet property="tsLowerLabel" destination="W9i-pE-069" id="q3T-K9-MzS"/>
+                        <outlet property="tsLowerStepper" destination="puG-yx-aLn" id="wNl-9V-3zv"/>
+                        <outlet property="tsUpperLabel" destination="MMa-9K-tRr" id="6O4-Kp-Z7P"/>
+                        <outlet property="tsUpperStepper" destination="ivd-lF-Ys7" id="Mvd-NL-OAw"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
