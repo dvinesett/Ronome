@@ -16,10 +16,6 @@
                         <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="si8-WC-5j5">
-                                <rect key="frame" x="209" y="370" width="30" height="30"/>
-                                <state key="normal" title="tap"/>
-                            </button>
                             <stepper opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" maximumValue="240" translatesAutoresizingMaskIntoConstraints="NO" id="9yU-dj-cSi">
                                 <rect key="frame" x="201" y="147" width="94" height="29"/>
                                 <connections>
@@ -100,6 +96,7 @@
                     </view>
                     <connections>
                         <outlet property="countLabel" destination="8nG-8X-jje" id="aIM-X6-pMP"/>
+                        <outlet property="playButton" destination="o2D-Wn-YB3" id="Ifb-fP-h7q"/>
                         <outlet property="tempoLabel" destination="pLl-O5-jqX" id="Wxh-wY-IFN"/>
                         <outlet property="tempoSlider" destination="VXo-y2-O5D" id="UAR-R2-Gdv"/>
                         <outlet property="tempoStepper" destination="9yU-dj-cSi" id="XnQ-C9-Ov7"/>

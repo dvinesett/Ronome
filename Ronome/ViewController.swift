@@ -10,8 +10,6 @@ import UIKit
 import AVFoundation
 
 class ViewController: UIViewController {
-    
-    
     @IBOutlet weak var tempoLabel: UILabel!
     @IBOutlet weak var tempoStepper: UIStepper!
     @IBOutlet weak var tempoSlider: UISlider!
@@ -20,6 +18,7 @@ class ViewController: UIViewController {
     @IBOutlet weak var tsLowerLabel: UILabel!
     @IBOutlet weak var tsLowerStepper: UIStepper!
     @IBOutlet weak var countLabel: UILabel!
+    @IBOutlet weak var playButton: UIButton!
     
     var metronomeTimer: NSTimer!
     var metronomeIsOn = false
@@ -53,53 +52,53 @@ class ViewController: UIViewController {
             tsLowerStepper.value = Double(tsLower)
         }
     }
-    
-
 
     @IBAction func stepTempo(sender: UIStepper) {
         tempo = sender.value
+        restartMetronome()
     }
     
     @IBAction func stepTsUpper(sender: UIStepper) {
         tsUpper = Int(sender.value)
+        restartMetronome()
     }
     
     @IBAction func stepTsLower(sender: UIStepper) {
         tsLower = Int(sender.value)
+        restartMetronome()
     }
-    
     
     @IBAction func slideTempo(sender: UISlider) {
         tempo = Double(sender.value)
+        restartMetronome()
     }
     
     @IBAction func toggleClick(sender: UIButton) {
         if metronomeIsOn {
-            // stop
-            metronomeIsOn = false
-            metronomeTimer?.invalidate()
-            count = 0
-            sender.setTitle("Start", forState: UIControlState.Normal)
+            stopMetronome(sender)
         } else {
-            // start
-            metronomeIsOn = true
-            sender.setTitle("Stop", forState: UIControlState.Normal)
-            
-            let metronomeTimeInterval:NSTimeInterval = 60.0 / tempo
-            metronomeTimer = NSTimer.scheduledTimerWithTimeInterval(metronomeTimeInterval, target: self, selector: Selector("playMetronomeSound"), userInfo: nil, repeats: true)
-            
-            metronomeTimer?.fire()
-            
+            startMetronome(sender)
         }
     }
     
-    override func didReceiveMemoryWarning() {
-        super.didReceiveMemoryWarning()
+    func stopMetronome(sender: UIButton) {
+        metronomeIsOn = false
+        metronomeTimer?.invalidate()
+        count = 0
+        sender.setTitle("Start", forState: UIControlState.Normal)
+    }
+    
+    func startMetronome(sender: UIButton) {
+        metronomeIsOn = true
+        sender.setTitle("Stop", forState: UIControlState.Normal)
+        
+        let metronomeTimeInterval:NSTimeInterval = (240.0 / Double(tsLower)) / tempo
+        metronomeTimer = NSTimer.scheduledTimerWithTimeInterval(metronomeTimeInterval, target: self, selector: Selector("playMetronomeSound"), userInfo: nil, repeats: true)
+        
+        metronomeTimer?.fire()
     }
 
     func playMetronomeSound() {
-        let currentTime = CFAbsoluteTimeGetCurrent()
-        print("\(count) Play metronome sound @ \(currentTime)")
         count++
         if count == 1 {
             metronomeAccentPlayer.play()
@@ -109,6 +108,15 @@ class ViewController: UIViewController {
                 count = 0
             }
         }
+    }
+    
+    func restartMetronome() {
+        stopMetronome(playButton)
+        startMetronome(playButton)
+    }
+    
+    override func didReceiveMemoryWarning() {
+        super.didReceiveMemoryWarning()
     }
     
     override func viewDidLoad() {
