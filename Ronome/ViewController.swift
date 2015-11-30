@@ -109,8 +109,10 @@ class ViewController: UIViewController {
     }
     
     func restartMetronome() {
-        stopMetronome(playButton)
-        startMetronome(playButton)
+        if metronomeIsOn {
+            stopMetronome(playButton)
+            startMetronome(playButton)
+        }
     }
     
     override func didReceiveMemoryWarning() {
