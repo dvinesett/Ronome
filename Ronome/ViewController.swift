@@ -92,12 +92,12 @@ class ViewController: UIViewController {
         metronomeIsOn = true
         sender.setTitle("Stop", forState: UIControlState.Normal)
         let metronomeTimeInterval:NSTimeInterval = (240.0 / Double(tsLower)) / tempo
-        metronomeTimer = NSTimer.scheduledTimerWithTimeInterval(metronomeTimeInterval, target: self, selector: Selector("playMetronomeSound"), userInfo: nil, repeats: true)
+        metronomeTimer = NSTimer.scheduledTimerWithTimeInterval(metronomeTimeInterval, target: self, selector: #selector(playMetronomeSound), userInfo: nil, repeats: true)
         metronomeTimer?.fire()
     }
 
     func playMetronomeSound() {
-        count++
+        count += 1
         if count == 1 {
             metronomeAccentPlayer.play()
         } else {
