@@ -7,8 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		FAAFFCD41C03E4E700015775 /* snizzap1.wav in Resources */ = {isa = PBXBuildFile; fileRef = FAAFFCD21C03E4E700015775 /* snizzap1.wav */; settings = {ASSET_TAGS = (); }; };
-		FAAFFCD51C03E4E700015775 /* snizzap2.wav in Resources */ = {isa = PBXBuildFile; fileRef = FAAFFCD31C03E4E700015775 /* snizzap2.wav */; settings = {ASSET_TAGS = (); }; };
+		FAAFFCD41C03E4E700015775 /* snizzap1.wav in Resources */ = {isa = PBXBuildFile; fileRef = FAAFFCD21C03E4E700015775 /* snizzap1.wav */; };
+		FAAFFCD51C03E4E700015775 /* snizzap2.wav in Resources */ = {isa = PBXBuildFile; fileRef = FAAFFCD31C03E4E700015775 /* snizzap2.wav */; };
 		FAD719DF1BEFDAB700243A05 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = FAD719DE1BEFDAB700243A05 /* AppDelegate.swift */; };
 		FAD719E11BEFDAB700243A05 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FAD719E01BEFDAB700243A05 /* ViewController.swift */; };
 		FAD719E41BEFDAB800243A05 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = FAD719E21BEFDAB800243A05 /* Main.storyboard */; };
@@ -198,7 +198,6 @@
 				TargetAttributes = {
 					FAD719DA1BEFDAB700243A05 = {
 						CreatedOnToolsVersion = 7.0.1;
-						DevelopmentTeam = 543754459T;
 					};
 					FAD719EE1BEFDAB800243A05 = {
 						CreatedOnToolsVersion = 7.0.1;
